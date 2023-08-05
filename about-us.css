@@ -1,0 +1,13 @@
+@media only screen and (max-width: 521px) {
+
+  .about-us-container,
+  .breadcrumb {
+    padding: 12px !important;
+  }
+
+  .about-us-container p {
+    font-size: 15px;
+  }
+
+
+}

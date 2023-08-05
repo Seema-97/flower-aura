@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-container-margin: 45px;
+}
+
+.margin-top {
+  margin-top: var(--theme-container-margin) !important;
+}
+
+/* main container styling */
+
+.main-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* row justify content styling */
+.row {
+  justify-content: space-between !important;
+}
+
+
+/* card image box styling */
+.card-img-box {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-img-box:hover {
+  transform: scale(1.01);
+}
+
+/* title at corner styling */
+.title-space-around {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+
+/* navbar */
+
+.nav-bg {
+  background-image: linear-gradient(to right top, #f6e2f1, #f7e7f3, #f9edf5, #faf2f8, #fbf8fa);
+}
+
+
+.btn-pink {
+  background-color: purple;
+  color: white;
+}
+
+.btn-pink:hover {
+  color: white;
+  background-color: rgb(107, 2, 107);
+}
+
+
+
+
+/* Primary navbar */
+.nav-font-color {
+  color: black !important;
+}
+
+.nav-font-color:hover {
+  color: rgb(237, 10, 237) !important;
+}
+
+.nav-font-color:active {
+  color: rgb(239, 4, 4) !important;
+}
+
+/* slider image (first-container)*/
+.slider-image {
+  border-radius: 20px;
+  width: 100% !important;
+
+}
+
+
+
+/* card for second-container*/
+
+.card-box {
+  border: none !important;
+  flex-basis: 16%;
+}
+
+.card-img {
+  border-radius: 10px;
+
+}
+
+.card-body-box {
+  width: 100%;
+  text-align: center;
+  height: 31px;
+}
+
+.card-body-text {
+  font-size: 18px;
+}
+
+
+
+/* third small-container image */
+.third-container-image {
+  border-radius: 20px !important;
+  width: 100%;
+  height: auto;
+}
+
+.third-container {
+  flex-basis: 100%;
+}
+
+
+/* gift card container (fourth-container)*/
+
+.title {
+  text-align: center;
+}
+
+.title-first-para {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 8px;
+
+}
+
+.title-second-para {
+  font-size: 18px;
+  color: gray;
+}
+
+
+.gift-card {
+  flex-basis: 24%;
+  margin: 5px;
+  padding: 0px !important;
+  height: auto;
+  border: 1px solid rgb(204, 204, 204);
+  border-top-left-radius: 48%;
+  border-top-right-radius: 48%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bg-pink-container {
+  background-image: linear-gradient(to right top, #f6e2f1, #f7e7f3, #f9edf5, #faf2f8, #fbf8fa);
+}
+
+
+/* best-sellers(fifth container) */
+
+.best-sellers-card-title {
+  font-size: 16px;
+  color: rgb(98, 98, 98);
+}
+
+.best-seller-card {
+  padding: 0px;
+  border-radius: 10px;
+  flex-basis: 24%;
+  height: auto;
+  margin: 5px;
+
+}
+
+
+/* testimonial-container(6th container) */
+.testimonial-heading-container {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.testimonial-card {
+  margin: 10px;
+  flex-basis: 31%;
+  border-radius: 20px;
+
+}
+
+.testimonial-date {
+  font-size: 14px;
+  color: gray;
+
+}
+
+.starImgNum {
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+
+/* footer */
+
+.footer-container-fluid {
+  background-image: linear-gradient(to right top, #f6e2f1, #f7e7f3, #f9edf5, #faf2f8, #fbf8fa);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 18px;
+  padding-top: 10px;
+
+}
+
+.footer-payment-img {
+  width: 400px;
+}
+
+.footer-payment-mode {
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-logo-image {
+  margin-left: 10px;
+}
+
+.copyright-text {
+  font-size: 13px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 1200px) {
+
+  .best-seller-card {
+    flex-basis: 30%;
+  }
+
+  .best-sellers-card-title {
+    height: 37px !important;
+  }
+
+  .card-box {
+    flex-basis: 30%;
+  }
+
+  .gift-card {
+    flex-basis: 45%;
+  }
+
+  .testimonial-card {
+    flex-basis: 46%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .best-seller-card {
+    flex-basis: 45%;
+  }
+
+  .best-sellers-card-title {
+    height: 37px !important;
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .best-seller-card {
+    flex-basis: 48%;
+    margin: 2px;
+  }
+
+  .best-seller-row-sm {
+    width: 100vw !important;
+    /* border: 2px solid black; */
+  }
+
+  .best-sellers-card-title {
+    font-size: 14px;
+    height: 37px !important;
+  }
+
+  .best-seller-card-text {
+    font-size: 15px;
+    color: black;
+    margin: 10px 0;
+  }
+
+  .best-seller-card-button {
+    font-size: 14px;
+  }
+
+  .card-box {
+    flex-basis: 50%;
+  }
+
+  .testimonial-card {
+    flex-basis: 80%;
+  }
+
+  .slider-image,
+  .third-container-image {
+    height: 200px;
+    object-position: center;
+  }
+
+  .third-container-image {
+    height: 85px;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .row {
+    justify-content: center !important;
+  }
+
+  .footer-payment-img {
+    width: 300px;
+  }
+}
